@@ -19,3 +19,38 @@ input, textarea{
 input[type="checkbox"]{
   display:inline-block;
 }
+
+.input-box {
+  position: relative;
+}
+.input-box span{
+  display: block;
+  background-color: rgba(44,160,254,0.6);
+  padding: 5px;
+  position: absolute;
+  top: -7px;
+  right: 200px;
+  width: 358px;
+  color: white;
+}
+
+.input-box span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(44,160,254,0.6);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+
+.textarea span{
+  right: -11px;
+}
+
+.tel span{
+  width: 422px;
+  right: 136px;
+}
